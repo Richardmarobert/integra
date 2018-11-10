@@ -1,1 +1,18 @@
+{
+  "name": "homebridge-integra",
+  "version": "0.1.0",
+  "description": "Homebridge plugin voor integra",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "homebridge-plugin-integra"
+  ],
+  "engines": {
+    "homebridge": ">=0.2.5"
+  },
+  "author": "Richard Robert",
+  "license": "MIT"
+}
 
