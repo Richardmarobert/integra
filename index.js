@@ -81,5 +81,23 @@ class OutputAccessory {
     callback(null)
   }
 
-  
+   getOnCharacteristicHandler (callback) {
+    /*
+     * this is called when HomeKit wants to retrieve the current state of the characteristic as defined in our getServices() function
+     * it's called each time you open the Home app or when you open control center
+     */
+
+    /* Log to the console the value whenever this function is called */
+    this.log(`calling getOnCharacteristicHandler`, this.isOn)
+
+    /*
+     * The callback function should be called to return the value
+     * The first argument in the function should be null unless and error occured
+     * The second argument in the function should be the current value of the characteristic
+     * This is just an example so we will return the value from `this.isOn` which is where we stored the value in the set handler
+     */
+    callback(null, this.isOn)
+  }
+
+}
 
